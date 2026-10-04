@@ -1,19 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1> Hello World again</h1>
-    <h2>About Me</h2>
-    <p>I am studying for an MSc in Computer Studies with Cyber Security, and this is my seventh module. I am currently learning how to build and publish my own websites using HTML.</p>
+    <header>
+        <h1>Hello World</h1>
+        <p>My journey into web development</p>
+    </header>
 
-    <h2>The Challenge</h2>
-    <p>Working full-time while studying for my MSc can be challenging. I enjoy learning new things, but finding time for coursework alongside work and everyday life is not always easy.</p>
-    <p>
-    I am using
-    <a href="https://www.w3schools.com/html/">W3Schools</a>
-    to learn more about HTML.</p>
+    <img class="profile-photo"
+        src="images/UNI Photo copy.jpg"
+        alt="Photo of me">
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>I am studying for an MSc in Computer Studies with Cyber Security,
+                and this is my seventh module. Alongside my studies, I work full-time,
+                so I am learning to balance coursework with work and everyday life.</p>
+
+            <p>This website documents my progress as I learn web development.
+                I started with a simple Hello World page and am gradually adding
+                images, styling and forms using HTML and CSS.</p>
+
+            <p>I enjoy learning new things and putting them into practice.
+                Building this website gives me a chance to experiment, solve problems
+                and see how each change affects the finished page.</p>
+        </section>
+
+        <section>
+            <h2>The Challenge</h2>
+            <p>Working full-time while studying for my MSc can be challenging. I enjoy learning new things, but finding time for coursework alongside work and everyday life is not always easy.</p>
+
+            <p>I am using
+                <a href="https://www.w3schools.com/html/">W3Schools</a>
+                to learn more about HTML.
+            </p>
+        </section>
+
+        <section>
+    <h2>Leave feedback</h2>
+    <p>This is a practice form. Feedback is not sent or stored yet.</p>
+
+    <form id="feedback-form">
+        <label for="visitor-name">Your name</label>
+        <input type="text" id="visitor-name"
+               name="visitor-name" required>
+
+        <label for="topic">What is your feedback about?</label>
+        <select id="topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option value="design">Page design</option>
+            <option value="content">Content</option>
+            <option value="usability">Ease of use</option>
+        </select>
+
+        <fieldset>
+            <legend>Was the page easy to read?</legend>
+
+            <label>
+                <input type="radio" name="easy-to-read"
+                       value="yes" required>
+                Yes
+            </label>
+
+            <label>
+                <input type="radio" name="easy-to-read"
+                       value="no">
+                No
+            </label>
+        </fieldset>
+
+        <label for="comments">Your comments</label>
+        <textarea id="comments" name="comments"
+                  rows="4" required></textarea>
+
+        <button type="submit">Submit feedback</button>
+    </form>
+</section>
+    </main>
 </body>
 </html>
